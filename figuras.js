@@ -95,3 +95,35 @@ return (radioCirculo*radioCirculo)*PI;
     const area=areaCuadrado(value);
     alert(area);
 }
+
+function calcularPerimetroTriangulo(){
+   const lado1=document.getElementById("InputLadoOne").value;
+   const lado2=document.getElementById("InputLadoTwo").value;
+   const base=document.getElementById("InputBaseTriangulo").value;
+   const altura=document.getElementById("InputAlturaTriangulo").value;
+
+   const perimetro= perimetroTriangulo(lado1,lado2,base);
+   alert(perimetro);
+}
+
+function calcularAreaTriangulo(){
+   const base=document.getElementById("InputBaseTriangulo").value;
+   const altura=document.getElementById("InputAlturaTriangulo").value;
+
+   const area= areaTriangulo(base,altura);
+   alert(area);
+}
+function calcularPerimetroCirculo(){
+   const radio= document.getElementById("InputRadio").value;
+
+   const perimetro=perimetroCirculo(radio);
+
+   alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+   const radio = document.getElementById("InputRadio").value;
+   const area=areaCirculo(radio,radio);
+
+   alert(area);
+}
