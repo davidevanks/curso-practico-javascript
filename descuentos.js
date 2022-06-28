@@ -11,7 +11,19 @@ function calcularPrecioConDescuento(precio, descuento){
 
 function onClickButtonPriceDiscount(){
     const price= document.getElementById("InputPrice").value;
-    const discount= document.getElementById("InputDiscount").value;
+    const cupoName= document.getElementById("InputDiscount").value;
+   let discount=0;
+    switch (cupoName) {
+        case "KennethCupon":
+            discount=10;
+          break;
+        case "AndreaCupon":
+            discount=30;
+          break;
+        default:
+          //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+          break;
+      }
 
     const precioConDescuento=calcularPrecioConDescuento(price,discount);
 
