@@ -16,3 +16,10 @@
 - implementar formulas en javascript
 - crear funciones
 - Integrar JS con HTML.
+
+##Talle #3: Calculo de media, mediana y moda
+
+- definir formulas
+- implementar en js
+- crear funciones
+- unir jsy html
